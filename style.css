@@ -223,18 +223,43 @@ h4.inicio:hover::after{
 }
 
 .mail:hover{
-    font-size: 0;
+    
+    text-decoration: none;
+    color: rgb(209, 21, 21) ;
+    animation-name: mail;
+    animation-duration: 1.5s;
+}
+@keyframes mail{
+    from {margin-left: 235px;}
+    to {margin-left: 280px;}
+}
+
+
+/*WORK.HTML */
+
+.Freelance-link{
+    margin-top: 60%;
+    margin-left: 25%;
     text-decoration: none;
 }
-.mail:hover::after{
-    content: attr(data-hover);
-    font-size: 22px;
-    color: rgb(209, 21, 21);
+.Freelance{
+    color: white;
+    font-size: 100px;
     text-decoration: none;
-    animation-duration: 2s;
-    animation-name: contacto-mail;  
-} 
-@keyframes contacto-mail {
-    from {margin-left: 235px;}
-    to {margin-left: 245px;}
+   
+    font-weight: bold;
+}
+.subtitulo-work{
+    color: rgb(209, 21, 21) ;
+    font-size: 25px;
+    text-decoration: none;
+}
+.movimiento-work:hover{
+    text-decoration: none;
+    animation-name: works;
+    animation-duration: 1s;
+}
+@keyframes works {
+    from {margin-left: 0;}
+    to {margin-left: 10%;}
 }
